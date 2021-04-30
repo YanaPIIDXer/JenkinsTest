@@ -6,7 +6,7 @@ Jenkinsの実験リポジトリ
 | Check | Value                                            |
 | ----- | ------------------------------------------------ |
 | O     | とりあえずDockerで立ち上げる                     |
-|       | JenkinsPipelineを試す                            |
+| O     | JenkinsPipelineを試す                            |
 |       | Slackに通知を投げてみる                          |
 |       | Master/Slave構成                                 |
 |       | 実際に他リポジトリからチェックアウトしてCIを試す |
