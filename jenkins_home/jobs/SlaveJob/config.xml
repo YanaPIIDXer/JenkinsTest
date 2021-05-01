@@ -14,7 +14,7 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.tasks.Shell>
-      <command>echo &quot;Hello, Slave&quot;</command>
+      <command>./remote.sh</command>
       <configuredLocalRules/>
     </hudson.tasks.Shell>
   </builders>

@@ -6,3 +6,6 @@ jenkins_home/jobs/**/builds
 jenkins_home/jobs/**/nextBuildNumber
 
 jenkins_agent/*
+
+# Slave実験用のworkspaceのみ対象とする
+!jenkins_agent/workspace
