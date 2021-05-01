@@ -27,6 +27,11 @@
                 echo &apos;Test2&apos;
             }
         }
+        stage(&quot;SlackNotify&quot;) {
+            steps {
+                slackSend(message: &quot;Test&quot;)
+            }
+        }
     }
 }
 </script>
