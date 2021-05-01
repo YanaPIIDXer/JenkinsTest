@@ -12,7 +12,12 @@
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
-  <builders/>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>echo &quot;Hello, Slave&quot;</command>
+      <configuredLocalRules/>
+    </hudson.tasks.Shell>
+  </builders>
   <publishers>
     <jenkins.plugins.slack.SlackNotifier plugin="slack@2.47">
       <baseUrl></baseUrl>
