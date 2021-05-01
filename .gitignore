@@ -4,3 +4,5 @@ jenkins_home/*
 !jenkins_home/jobs
 jenkins_home/jobs/**/builds
 jenkins_home/jobs/**/nextBuildNumber
+
+jenkins_agent/*

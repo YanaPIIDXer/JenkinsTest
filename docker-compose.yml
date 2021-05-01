@@ -10,5 +10,7 @@ services:
             - slave
     slave:
         image: jenkins/ssh-slave:latest
+        volumes:
+            - ./jenkins_agent:/home/jenkins/agent
         environment:
             JENKINS_SLAVE_SSH_PUBKEY: AAAAB3NzaC1yc2EAAAADAQABAAABAQDGpC9xp/CiD/7YFJNDbah4qE0m50b6SSRGQHAviZvJugjqes7jfTWk+mG8dHBNfkgGwdA2ioluWY11TpovVtUDbuJiQZO/S4dW1j5DKgq6aiqv5/UBC3nanxmD0Kl/5/6TOPker8WvNIeuYp8CTLMQI+9L+ouojHsuYBkSMgFYZnzOfUOvBMmCID7psjeBGq9W1QcZEzBNysy6dV6IXDp1/XnktFcKV4MoZKyfMtDTDlwlq2gUHP5dGKkp50virXQZ6PN89ystxB267/M+AHFJpMGhpN7wHFBJ6unsX2YctU75e8K1zc/S3eJs7r1vdSUnmAKQZYyc8/d+mgQuj4id
